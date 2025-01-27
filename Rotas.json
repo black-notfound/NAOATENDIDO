@@ -1,0 +1,58 @@
+{
+    "M": {
+        "11 a 16": { "status": "pronta" },
+        "17 a 22": { "status": "pronta" },
+        "23 a 28": { "status": "pronta" },
+        "29 a 34": { "status": "no escaneamento" },
+        "35 a 40": { "status": "na esteira" },
+        "42 a 46": { "status": "a fazer" },
+        "47 a 52": { "status": "pronta" },
+        "53 a 58": { "status": "a fazer" },
+        "59 a 64": { "status": "a fazer" },
+        "65 a 70": { "status": "pronta" },
+        "71 a 78": { "status": "pronta" },
+        "99": { "status": "a fazer" }
+    },
+    "Y": {
+        "11 a 16": { "status": "pronta" },
+        "17 a 22": { "status": "pronta" },
+        "23 a 28": { "status": "pronta" },
+        "29 a 34": { "status": "no escaneamento" },
+        "35 a 40": { "status": "na esteira" },
+        "42 a 46": { "status": "a fazer" },
+        "47 a 52": { "status": "a fazer" },
+        "53 a 58": { "status": "a fazer" },
+        "59 a 64": { "status": "a fazer" },
+        "65 a 70": { "status": "a fazer" },
+        "71 a 78": { "status": "a fazer" },
+        "99": { "status": "a fazer" }
+    },
+    "V": {
+        "11 a 16": { "status": "pronta" },
+        "17 a 22": { "status": "pronta" },
+        "23 a 28": { "status": "pronta" },
+        "29 a 34": { "status": "no escaneamento" },
+        "35 a 40": { "status": "na esteira" },
+        "42 a 46": { "status": "a fazer" },
+        "47 a 52": { "status": "a fazer" },
+        "53 a 58": { "status": "a fazer" },
+        "59 a 64": { "status": "a fazer" },
+        "65 a 70": { "status": "a fazer" },
+        "71 a 78": { "status": "a fazer" },
+        "99": { "status": "a fazer" }
+    },
+    "H": {
+        "11 a 16": { "status": "pronta" },
+        "17 a 22": { "status": "pronta" },
+        "23 a 28": { "status": "pronta" },
+        "29 a 34": { "status": "no escaneamento" },
+        "35 a 40": { "status": "na esteira" },
+        "42 a 46": { "status": "a fazer" },
+        "47 a 52": { "status": "a fazer" },
+        "53 a 58": { "status": "a fazer" },
+        "59 a 64": { "status": "a fazer" },
+        "65 a 70": { "status": "a fazer" },
+        "71 a 78": { "status": "a fazer" },
+        "99": { "status": "a fazer" }
+    }
+}

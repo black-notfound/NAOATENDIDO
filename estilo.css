@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(10, 47, 42);
+}
+
+/* Estilo da logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  width: 200px;
+  transition: width 0.3s ease, transform 0.3s ease;
+  border-color: rgb(168, 155, 145);
+  border-style: groove;
+}
+
+.logo:hover {
+  background-color: rgb(168,155,145);
+  transform: scale(1.05);
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      width: 100px;
+    }
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* Botão de abrir sidebar */
+.open-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: rgb(244, 179, 111);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.open-btn:hover {
+  background-color: rgb(168, 155, 145);
+  transform: scale(1.1);
+}
+
+/* Estilo da sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgb(10, 47, 42);
+  color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgb(76, 161, 93);
+  color: white;
+  width: 100%;
+  font-size: large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.close-btn {
+  font-size: 20px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.toggle-items-btn {
+  padding: 10px;
+  background-color: rgb(214, 110, 15);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.itemlist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  display: none;
+}
+
+.itemlist.show {
+  display: flex;
+}
+
+.itemlist .item {
+  background-color: rgb(168, 155, 145);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.itemlist .item:hover {
+  background-color: #555;
+}
+
+/* Quando a sidebar está aberta */
+.sidebar.open {
+  right: 0;
+}
+
+.content.open {
+  margin-right: 250px;
+}
+
+.content {
+  padding: 20px;
+  margin-right: 0;
+  transition: margin-right 0.3s ease;
+  background-color: #152e2a;
+}
+
+.navbar {
+  background-color: rgb(10, 47, 42);
+  height: 100px;
+}
+
+.navbar-header{
+  border: 5px, solid rgb(0, 0, 0);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 40px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Carrossel */
+.carrossel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 300%; /* 3 imagens ocupam 100% do espaço, logo 300% para 3 imagens */
+}
+
+.container img{
+  width: 33.33%; /* Cada imagem ocupa 1/3 da largura do contêiner */
+  object-fit: contain;
+  flex-shrink: 0;
+
+}
+
+.botao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.next {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.imagem1 {
+  width: 90%;
+  height: 90%;
+}
+
+.imagem2 {
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.imagem3 {
+  max-width: 100vw;
+  max-height: 100vh;
+
+}
+
+.botao.tela-cheia {
+  position: absolute;
+  top: 20px; /* Distância do topo */
+  right: 0; /* Distância da borda direita */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+  border-radius: 5px; /* Botão arredondado */
+}
+
+.botao.tela-cheia:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btnCarrossel {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 11;
+  border-radius: 5px;
+}
+
+
+.footer {
+  background-color: rgb(10,47,42);
+  text-align: center;
+  color: rgb(76, 161, 93);
+  height: 50px;
+  padding: 5px;
+  font-size: 40px;
+}

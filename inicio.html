@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>CD EMBU</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+<nav class="navbar-header">
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo-container">
+            <a><img src="img/logo.png" class="logo"></a>
+        </div>
+        <!-- Sidebar -->
+            <div class="content">
+                <button class="open-btn" id="open-btn">☰ Setores</button>
+            </div>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                 SETORES
+                 <button class="close-btn" id="close-btn">×</button>
+                </div>
+                    <!-- Botões para alternar os itens -->
+                    <button class="toggle-items-btn" id="toggle-items">MÁQUINA</button>
+                <div class="itemlist" id="itemlist">
+                    <a class="item" href="ERROS POR SETOR.html#M">Setor M</a>
+                    <a class="item" href="ERROS POR SETOR.html#Y">Setor Y</a>
+                    <a class="item" href="ERROS POR SETOR.html#V">Setor V</a>
+                    <a class="item" href="ERROS POR SETOR.html#H">Setor H</a>
+                </div>
+                 <button class="toggle-items-btn" id="toggle-items2">MEZANINO</button>
+                <div class="itemlist" id="itemlist2">
+                 <a class="item" href="ERROS POR SETOR.html#A-X">Setor A-X</a>
+                 <a class="item" href="ERROS POR SETOR.html#N-J">Setor N-J</a>
+                 <a class="item" href="ERROS POR SETOR.html#W">Setor W</a>
+                </div>
+                 <button class="toggle-items-btn" id="toggle-items1">EXTERNO</button>
+                <div class="itemlist" id="itemlist1">
+                    <a class="item" href="ERROS POR SETOR.html#D-K-Z">Setor D-K-Z</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- NAVBAR -->
+    <ul class="navbar">
+        <li><a href="ERROS POR SETOR.html">ERROS POR SETOR</a></li>
+        <li><a href="OFENSORES.html">OFENSORES</a></li>
+        <li><a href="ROTAS POR SETOR.HTML">ROTAS POR SETOR</a></li>
+    </ul>
+</nav>
+
+    <!-- CARROSSEL -->
+    <div class="carrossel">
+        <div class="container">
+            <img id="img1" class="imagem1" src="tabelas/NAt.png">
+            <img id="img2" class="imagem2" src="tabelas/Nat_por_setor.png">
+            <img id="img3" class="imagem3" src="tabelas/Sobras.png">
+        </div>
+        <button class="botao prev" onclick="moverCarrossel(-1)">❮</button>
+        <button class="botao next" onclick="moverCarrossel(1)">❯</button>
+        <button class="botao tela-cheia" id="btn-tela-cheia">🖵</button>
+        <button class="btnCarrossel" id="btn-controle">PARAR</button>
+    </div>
+        <footer>
+            <div class="footer">
+                POWERED BY "Zion_Keim" e "Aécio_Silva"
+            </div>
+        </footer>
+
+    <script src="carrossel.js"></script>
+</body>
+</html>
